@@ -2,6 +2,17 @@
 @import "./nullstyle.scss";
 
 
+@mixin btnEffect($effect, $colr, $backgr) {
+    &:#{$effect}{
+        background-color: $backgr;
+        color: $colr;
+    }
+}
+
+a{
+    transition: .2s linear;
+}
+
 body{
     font-family: 'Karla', sans-serif;
 }
@@ -64,11 +75,15 @@ header{
                 letter-spacing: 1.5px;
                 color: #837D88;
                 text-transform: uppercase;
+                &:hover{
+                    color: #2C2830;
+                }
             }
         }
         & .btn{
             color: #2C2830;
             border: 1.5px solid currentColor;
+            @include btnEffect(hover, white, #2C2830);
         }
     }
 }
@@ -107,6 +122,7 @@ main{
             & .btn{
                 color: white;
                 border: 1.5px solid currentColor;
+                @include btnEffect(hover, #2C2830, white);
             }
         }
         &__end{
@@ -171,6 +187,7 @@ main{
             & .btn{
                 color: white;
                 border: 1.5px solid currentColor;
+                @include btnEffect(hover, #2C2830, white);
             }
         }
     }
@@ -193,6 +210,9 @@ footer{
             & li a{
                 font-size: 24px;
                 color: #837D88;
+                &:hover{
+                    color: #2C2830;
+                }
             }
         }
     }
@@ -223,6 +243,9 @@ footer{
         }
         & ul li a{
             color: #2D2641;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }

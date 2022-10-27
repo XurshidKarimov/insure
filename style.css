@@ -112,6 +112,10 @@ ol[class] {
   padding: 0;
 }
 
+a {
+  transition: 0.2s linear;
+}
+
 body {
   font-family: "Karla", sans-serif;
 }
@@ -182,9 +186,16 @@ header .header__end ul li a {
   color: #837D88;
   text-transform: uppercase;
 }
+header .header__end ul li a:hover {
+  color: #2C2830;
+}
 header .header__end .btn {
   color: #2C2830;
   border: 1.5px solid currentColor;
+}
+header .header__end .btn:hover {
+  background-color: #2C2830;
+  color: white;
 }
 
 main .head__page__bg {
@@ -222,6 +233,10 @@ main .head__page__content__text__subtitle {
 main .head__page__content .btn {
   color: white;
   border: 1.5px solid currentColor;
+}
+main .head__page__content .btn:hover {
+  background-color: white;
+  color: #2C2830;
 }
 main .head__page__end {
   width: 50%;
@@ -288,6 +303,10 @@ main .find__out__content .btn {
   color: white;
   border: 1.5px solid currentColor;
 }
+main .find__out__content .btn:hover {
+  background-color: white;
+  color: #2C2830;
+}
 
 .footer__bg {
   background: #FAFAFA;
@@ -310,6 +329,9 @@ footer .footer__top .social ul {
 footer .footer__top .social ul li a {
   font-size: 24px;
   color: #837D88;
+}
+footer .footer__top .social ul li a:hover {
+  color: #2C2830;
 }
 footer hr {
   margin: 36px 0 48px;
@@ -338,4 +360,7 @@ footer .footer__bottom ul li:not(:first-child, :last-child) {
 }
 footer .footer__bottom ul li a {
   color: #2D2641;
+}
+footer .footer__bottom ul li a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
