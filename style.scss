@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+@import "./nullstyle.scss";
+
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.777778px;
+    color: #FFFFFF;
+}
+
+header, section, footer{
+    padding: 0 calc(50vw - 550px);
+}
+
+.btn{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.head__page__btn{
+    padding: 12.5px 28.5px;
+}
+.find__out__btn{
+    padding: 12.5px 25px;
+}
+
+.grey__line{
+    width: 150px;
+    height: 1px;
+    background-color: #979797;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+    & .header__end{
+        display: flex;
+        align-items: center;
+        column-gap: 34px;
+        & ul{
+            display: flex;
+            column-gap: 26px;
+            & li a{
+                font-size: 13px;
+                font-weight: 700;
+                line-height: 15px;
+                letter-spacing: 1.5px;
+                color: #837D88;
+                text-transform: uppercase;
+            }
+        }
+        & .btn{
+            color: #2C2830;
+            border: 1.5px solid currentColor;
+        }
+    }
+}
+
+main{
+    & .head__page__bg{
+        background-color: #2D2641;
+        margin-bottom: 305px;
+    }
+    & .head__page{
+        padding-top: 107px;
+        height: 600px;
+        display: flex;
+        &__content{
+            width: 50%;
+            & .grey__line{
+                margin-bottom: 63px;
+            }
+            &__text{
+                margin-bottom: 24px;
+                &__title{
+                    margin-bottom: 34px;
+                    font-size: 72px;
+                    font-weight: 400;
+                    line-height: 64px;
+                    letter-spacing: -1px;
+                    color: white;
+                }
+                &__subtitle{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: white;
+                }
+            }
+            & .btn{
+                color: white;
+                border: 1.5px solid currentColor;
+            }
+        }
+        &__end{
+            width: 50%;
+        }
+    }
+    & .different{
+        margin-bottom: 138px;
+        & .grey__line{
+            margin-bottom: 63px;
+        }
+        &__title{
+            color: #2C2830;
+            margin-bottom: 96px;
+        }
+        &__cards__block{
+            display: grid;
+            grid-template: minmax(250px, auto) / repeat(auto-fit, minmax(320px, 1fr));
+            column-gap: 30px;
+            grid-auto-rows: 1fr;
+            &__card{
+                display: grid;
+                grid-template: auto auto 1fr / 1fr;
+                &__imgBox{
+                    background-color: #96A9C6;
+                    width: 86px;
+                    height: 86px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                }
+                &__title{
+                    margin-top: 32px;
+                    margin-bottom: 16px;
+                    font-size: 28px;
+                    line-height: 38px;
+                    letter-spacing: -0.388889px;
+                    color: #2C2830;
+                }
+                &__subtitle{
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #837D88;
+                }
+            }
+        }
+    }
+    & .find__out{
+        height: 250px;
+        margin-bottom: 150px;
+        &__content{
+            height: 100%;
+            padding: 0 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: url(./img/find__out__bg.jpg) no-repeat;
+            background-position: center;
+            & .btn{
+                color: white;
+                border: 1.5px solid currentColor;
+            }
+        }
+    }
+}
+
+.footer__bg{
+    background: #FAFAFA;
+}
+
+footer{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    & .footer__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .social ul{
+            display: flex;
+            column-gap: 16px;
+            & li a{
+                font-size: 24px;
+                color: #837D88;
+            }
+        }
+    }
+    & hr{
+        margin: 36px 0 48px;
+        height: 1px;
+        background-color: #DADADA;
+    }
+    & .footer__bottom{
+        display: flex;
+        column-gap: 175px;
+
+        & ul li, 
+        & ul li a{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 15px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        & ul li:first-child{
+            color: #837D88;
+            margin-bottom: 36px;
+        }
+        & ul li:not(:first-child, :last-child){
+            margin-bottom: 16px;
+        }
+        & ul li a{
+            color: #2D2641;
+        }
+    }
+}
